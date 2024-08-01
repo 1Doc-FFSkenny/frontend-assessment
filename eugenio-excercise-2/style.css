@@ -1,0 +1,84 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tab Styles */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Accordion Styles */
+.accordion-item {
+  border-top: 1px solid #ccc;
+}
+
+.accordion-title {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.accordion-title.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+  }
+
+  .accordion-item:first-child {
+    border-top: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .accordion-item {
+    display: none;
+  }
+}
